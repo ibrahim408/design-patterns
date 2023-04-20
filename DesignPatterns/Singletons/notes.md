@@ -1,0 +1,9 @@
+- singleton is basically global state
+- each variable is referencing the global object
+- pros
+- Instead of having to set up memory for a new instance each time, we only have to set up memory for that one instance, which is referenced throughout the application
+- cons
+- considered anti-pattern
+- global variables are bad because any code anywhere in the system can change their values. So when debugging, it can be challenging to figure out which code path leads to the Singleton's current state.
+- hard to test
+- Memory allocated to an Singleton can't be freed.
